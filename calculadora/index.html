@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora</title>
+        <script src="js/script.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1 class="app-title">Calculadora</h1>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Ea assumenda minima deserunt consequatur, soluta repellendus dolor repudiandae,
+                    quibusdam quis officiis sunt optio doloremque, aliquid debitis ducimus nisi nam dolorum quam.
+                </p>
+            </header>
+            <main class="operation">
+                <ol class="how-to-use">
+                    <li>Escolha o número inicial</li>
+                    <li>Escolha a operação matemática</li>
+                    <li>Escolha o número final</li>
+                </ol>
+                <div class="container-calculator">
+                    <form action="#" method="get">
+                        <label for="number1">Primeiro Número: <span class="required">*</span></label>
+                        <input class="first-number" type="number" id="number1" name="number1" placeholder="Digite o primeiro número" required autofocus>
+                        <label for="mathaccount">Operação : <span class="required">*</span></label>
+                        <select onChange="escolherOperacao()" class="mathaccount" name="mathaccount" id="mathaccount">
+                            <option value="" disabled selected>-- Selecione a operação --</option>
+                            <option value="0" id="addition">+ (Adição)</option>
+                            <option value="1" id="subtraction">- (Subtração)</option>
+                            <option value="2" id="multiplication">* (Multiplicação)</option>
+                            <option value="3" id="division">/ (Divisão)</option>
+                        </select>
+                        <label for="number2">Segundo Número: <span class="required">*</span></label>
+                        <input class="second-number" type="number" id="number2" name="number2" placeholder="Digite o segundo número" required>
+                        <input class="make-operation" type="submit" value="Fazer operação">
+                        <!-- <button onClick="realizarOperação()" class="make-operation">Faça operação</button> -->
+                    </form>
+                    <p class="result">O resultado da operação é:<div id="screen-number"></div></p>
+                </div>
+            </main>           
+        </div>
+    </body>
+</html>

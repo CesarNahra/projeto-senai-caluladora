@@ -1,0 +1,64 @@
+/* general */
+
+*{
+    font-family: "arial";
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #faf9f6;
+}
+
+
+/* main */
+
+.container-calculator{
+    border: 1px solid #ece7dd;
+    background-color: #fff;
+    text-align: center;
+    max-width: 640px;
+    padding: 20px 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.first-number, .second-number, .mathaccount, .make-operation{
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    display: block;
+    margin: 20px 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.required{
+    color: #FF0042;
+}
+
+
+.make-operation{
+    cursor: pointer;
+    padding: 10px;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    transition: .5s;
+}
+
+.make-operation:hover{
+    background-color: #ccc;
+    border: 1px solid #ddd;
+}
+
+.result{
+    font-weight: bold;
+}
+
+#screen-number{
+    background-color: #ccc;
+    height: 100px;
+    width: 100px;
+    margin-right: auto;
+    margin-left: auto;
+}
